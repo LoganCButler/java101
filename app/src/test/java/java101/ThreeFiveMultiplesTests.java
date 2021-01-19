@@ -6,14 +6,8 @@ package java101;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
 public class ThreeFiveMultiplesTests {
-    @Test public void testAppHasAGreeting() {
-        ThreeFiveMultiples classUnderTest = new ThreeFiveMultiples();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
-    }
-
     @Test public void testAppSum_3() {
         ThreeFiveMultiples classUnderTest = new ThreeFiveMultiples();
         assertEquals(3, classUnderTest.getSumOfThreeFiveMultiples(4));

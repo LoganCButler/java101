@@ -6,16 +6,11 @@ package java101;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9."
+ * The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.
+ */
 public class ThreeFiveMultiples {
-    public String getGreeting() {
-        return "If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9." +
-                " The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.";
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new ThreeFiveMultiples().getGreeting());
-    }
-
     public int getSumOfThreeFiveMultiples(int maxNumber) {
         List<Integer> allMultiples = getMultiples(maxNumber);
 
